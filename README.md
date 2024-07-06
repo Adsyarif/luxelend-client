@@ -1,3 +1,22 @@
+## Instal Dependency
+
+yarn install
+
+## Run
+
+yarn dev
+
+## Pages
+
+- Homepage = "/"
+- Genderpage = "/gender"  
+  ![Gender Page](/src/assets/doc/genderPagePreview.png)
+
+## Dependency
+
+- react-router-dom
+- tailwind-merge
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

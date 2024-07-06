@@ -1,15 +1,17 @@
-import React from 'react'
-import Navbar from './Containers/Navbar/Navbar'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { GenderPage } from "./pages/gender";
+import { HomePage } from "./pages/home";
 
 function App() {
-
   return (
-    <>
-    <div>
-      <Navbar/>
-    </div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:gender" element={<GenderPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
