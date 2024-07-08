@@ -2,7 +2,7 @@ import { BottomNav } from "../components/features/bottomNav";
 import { Card } from "../components/common/cards";
 import { FilterResult } from "../components/features/filterResultSection";
 import { GenderHero } from "../components/features/genderHero";
-import { ProductWrapper } from "../components/productWrapper";
+import { ProductWrapper } from "../components/productPage";
 import { TopNav } from "../components/features/topnav";
 
 export function GenderWrapper() {
