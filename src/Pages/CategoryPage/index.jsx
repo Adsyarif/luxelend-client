@@ -4,7 +4,7 @@ import { useState } from "react";
 import data from "../../data/categoryData.json";
 
 const CategoryPage = () => {
-  console.log(data);
+  // console.log(data.gender.men);
   // const [Categories, setCategories] = useState({
   //   women: [],
   //   men: [],
@@ -14,12 +14,36 @@ const CategoryPage = () => {
   //   const data = await response.json();
   // };
 
+  const gender = {
+    women: [
+      "View All Styles",
+      "Pants",
+      "Dresses",
+      "Skirts",
+      "Tops",
+      "Sweaters + Swetshirt",
+      "Jackets + Coats",
+      "Jumpsuits + Rompers",
+    ],
+    men: [
+      "View All Styles",
+      "Jackets + Coats",
+      "Tops",
+      "Sweaters + Swetshirt",
+      "Pants",
+    ],
+  };
+
   return (
     <div className="md:mx-auto md:max-w-md">
       <Header />
       <BackButton />
-      <CategoryCard items={data.gender.women} gender={"Women"} isWomen={true} />
-      <CategoryCard items={data.gender.men} gender={"Men"} isWomen={false} />
+      <CategoryCard
+        items={data.category.women}
+        gender={"Women"}
+        isWomen={true}
+      />
+      <CategoryCard items={data.category.men} gender={"Men"} isWomen={false} />
     </div>
   );
 };

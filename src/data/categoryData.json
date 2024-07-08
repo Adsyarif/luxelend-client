@@ -193,5 +193,24 @@
         ]
       }
     ]
+  },
+  "category": {
+    "women": [
+      "View All Styles",
+      "Pants",
+      "Dresses",
+      "Skirts",
+      "Tops",
+      "Sweaters + Swetshirt",
+      "Jackets + Coats",
+      "Jumpsuits + Rompers"
+    ],
+    "men": [
+      "View All Styles",
+      "Jackets + Coats",
+      "Tops",
+      "Sweaters + Swetshirt",
+      "Pants"
+    ]
   }
 }
