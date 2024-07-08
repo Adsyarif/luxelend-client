@@ -1,10 +1,11 @@
-import { TopNav } from "./components/exclusive/topnav";
+import { TopNav } from "../gender/components/features/topnav";
 import { Card } from "./components/common/cards";
 import { WelcomeBanner } from "./components/exclusive/welcomeBanner";
 import { Buttons } from "./components/common/button";
 import { HomeBanner } from "./components/exclusive/homeBanner";
 import { BrandLineup } from "./components/exclusive/brandLineup";
 import { FeaturesCard } from "./components/exclusive/featuresCard";
+import { BottomNav } from "../gender/components/features/bottomNav";
 
 export function HomeWrapper() {
     return (
@@ -22,6 +23,7 @@ export function HomeWrapper() {
             <HomeBanner />
             <BrandLineup />
             <FeaturesCard />
+            <BottomNav />
         </Card>
     );
 }
