@@ -1,7 +1,7 @@
-import { Button } from "../../common/button";
-import { Card } from "../../common/cards";
-import homeImg from "../../../../../Assets/img/Home.png";
-import listImg from "../../../../../Assets/img/List.png";
+import { Button } from "../../components/button";
+import { Card } from "../../components/cards";
+import homeImg from "../../Assets/img/Home.png";
+import listImg from "../..//Assets/img/List.png";
 
 export function BottomNav() {
   return (

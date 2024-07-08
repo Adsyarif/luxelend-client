@@ -1,4 +1,4 @@
-import { Card } from "../../common/cards";
+import { Card } from "../../../../../components/cards";
 // import genderHeroBG from "../../../../assets/img/genderHeroBG.webp";
 
 // bg-[url('src/assets/img/genderHeroBg.webp')]

@@ -1,5 +1,5 @@
-import { Card } from "../../common/cards";
-import searchImg from "../../../../../Assets/img/search.png";
+import { Card } from "../../components/cards";
+import searchImg from "../../Assets/img/search.png";
 
 export function TopNav() {
   return (

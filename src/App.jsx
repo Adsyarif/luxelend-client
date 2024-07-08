@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { GenderPage } from "./pages/gender";
+import { GenderPage } from "./pages/categoryGender/gender";
 import { HomePage } from "./pages/home";
 
 function App() {

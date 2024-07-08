@@ -1,4 +1,4 @@
-import { Button } from "../../common/button";
+import { Button } from "../../../../../components/button";
 
 export function FilterResult() {
   return (
