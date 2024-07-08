@@ -1,32 +1,24 @@
 import { CategoryCard } from "../../Containers";
 import { Header, BackButton } from "../../Components";
+import { useState } from "react";
+import data from "../../data/categoryData.json";
 
 const CategoryPage = () => {
-  const gender = {
-    women: [
-      "View All Styles",
-      "Pants",
-      "Dresses",
-      "Skirts",
-      "Tops",
-      "Sweaters + Swetshirt",
-      "Jackets + Coats",
-      "Jumpsuits + Rompers",
-    ],
-    men: [
-      "View All Styles",
-      "Jackets + Coats",
-      "Tops",
-      "Sweaters + Swetshirt",
-      "Pants",
-    ],
-  };
+  // const [Categories, setCategories] = useState({
+  //   women: [],
+  //   men: [],
+  // });
+  // const fetchCategory = async () => {
+  //   const response = await fetch("");
+  //   const data = await response.json();
+  // };
+
   return (
     <div className="md:mx-auto md:max-w-md">
       <Header />
       <BackButton />
-      <CategoryCard items={gender.women} gender={"Women"} isWomen={true} />
-      <CategoryCard items={gender.men} gender={"Men"} isWomen={false} />
+      <CategoryCard items={data.gender.women} gender={"Women"} isWomen={true} />
+      <CategoryCard items={data.gender.men} gender={"Men"} isWomen={false} />
     </div>
   );
 };

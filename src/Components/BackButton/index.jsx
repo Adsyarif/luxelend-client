@@ -1,6 +1,6 @@
 const BackButton = () => {
   return (
-    <button className="p-5 flex gap-5">
+    <button className="p-5 flex gap-5" onClick={() => {}}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
