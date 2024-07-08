@@ -1,21 +1,197 @@
 {
   "gender": {
     "women": [
-      "View All Styles",
-      "Pants",
-      "Dresses",
-      "Skirts",
-      "Tops",
-      "Sweaters + Swetshirt",
-      "Jackets + Coats",
-      "Jumpsuits + Rompers"
+      { "View All Styles": [] },
+      {
+        "Pants": [
+          {
+            "productId": "11",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Denim Jumpsuit",
+            "size": ["S", "M", "L"],
+            "color": ["Blue"],
+            "brand": "Topshop",
+            "style": ["Denim", "zip front"],
+            "material": ["100% cotton"],
+            "fitNote": "Model is 5'8\" / 173 cm wearing size S",
+            "rentPrice": 1100000,
+            "retailPrice": 3200000
+          }
+        ]
+      },
+      {
+        "Dresses": [
+          {
+            "productId": "10",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Floral Maxi Dress",
+            "size": ["S", "M", "L"],
+            "color": ["Floral"],
+            "brand": "Forever 21",
+            "style": ["Maxi", "floral"],
+            "material": ["100% rayon"],
+            "fitNote": "Model is 5'9\" / 175 cm wearing size M",
+            "rentPrice": 950000,
+            "retailPrice": 2800000
+          }
+        ]
+      },
+      {
+        "Skirts": [
+          {
+            "productId": "9",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Pleated Midi Skirt",
+            "size": ["XS", "S", "M"],
+            "color": ["Navy", "Red"],
+            "brand": "Mango",
+            "style": ["Midi", "pleated"],
+            "material": ["100% polyester"],
+            "fitNote": "Model is 5'7\" / 170 cm wearing size S",
+            "rentPrice": 700000,
+            "retailPrice": 2300000
+          }
+        ]
+      },
+      {
+        "Tops": [
+          {
+            "productId": "5",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Ruffle Sleeve Blouse",
+            "size": ["XS", "S", "M", "L"],
+            "color": ["Red", "White"],
+            "brand": "Zara",
+            "style": ["Blouse", "ruffle sleeve"],
+            "material": ["100% polyester"],
+            "fitNote": "Model is 5'8\" / 173 cm wearing size S",
+            "rentPrice": 720000,
+            "retailPrice": 2200000
+          }
+        ]
+      },
+      {
+        "Sweaters + Swetshirt": [
+          {
+            "productId": "7",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Knit Sweater",
+            "size": ["XS", "S", "M"],
+            "color": ["Pink", "Grey"],
+            "brand": "H&M",
+            "style": ["Knit", "crew neck"],
+            "material": ["70% acrylic", "30% wool"],
+            "fitNote": "Model is 5'7\" / 170 cm wearing size XS",
+            "rentPrice": 800000,
+            "retailPrice": 2500000
+          }
+        ]
+      },
+      {
+        "Jackets + Coats": [
+          {
+            "productId": "6",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Trench Coat",
+            "size": ["S", "M", "L"],
+            "color": ["Beige"],
+            "brand": "Burberry",
+            "style": ["Trench", "double-breasted"],
+            "material": ["100% cotton"],
+            "fitNote": "Model is 5'9\" / 175 cm wearing size S",
+            "rentPrice": 1200000,
+            "retailPrice": 4500000
+          }
+        ]
+      },
+      {
+        "Jumpsuits + Rompers": [
+          {
+            "productId": "8",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "High Waist Trousers",
+            "size": ["26", "28", "30"],
+            "color": ["Black", "Grey"],
+            "brand": "Uniqlo",
+            "style": ["High waist", "zip fly"],
+            "material": ["95% polyester", "5% spandex"],
+            "fitNote": "Model is 5'8\" / 173 cm wearing size 28",
+            "rentPrice": 650000,
+            "retailPrice": 2100000
+          }
+        ]
+      }
     ],
     "men": [
-      "View All Styles",
-      "Jackets + Coats",
-      "Tops",
-      "Sweaters + Swetshirt",
-      "Pants"
+      { "View All Styles": [] },
+      {
+        "Jackets + Coats": [
+          {
+            "productId": "2",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Classic Denim Jacket",
+            "size": ["M", "L", "XL"],
+            "color": ["Blue"],
+            "brand": "Levi's",
+            "style": ["Denim", "button fastening"],
+            "material": ["100% cotton"],
+            "fitNote": "Model is 6'1\" / 185 cm wearing size M",
+            "rentPrice": 950000,
+            "retailPrice": 3500000
+          }
+        ]
+      },
+      {
+        "Tops": [
+          {
+            "productId": "1",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Shadow Floral Tie-Neck Blouse",
+            "size": ["S", "M", "L", "XL"],
+            "color": ["Black", "White"],
+            "brand": "Michael Kors",
+            "style": ["Blouse", "georgette", "button fastening"],
+            "material": ["60% viscose", "silk"],
+            "fitNote": "Model is 5'9\" / 175 cm wearing size XS",
+            "rentPrice": 839000,
+            "retailPrice": 2500000
+          }
+        ]
+      },
+      {
+        "Sweaters + Swetshirt": [
+          {
+            "productId": "3",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Casual Pullover Sweater",
+            "size": ["S", "M", "L"],
+            "color": ["Grey", "Black"],
+            "brand": "GAP",
+            "style": ["Pullover", "crew neck"],
+            "material": ["80% cotton", "20% polyester"],
+            "fitNote": "Model is 5'11\" / 180 cm wearing size M",
+            "rentPrice": 750000,
+            "retailPrice": 2000000
+          }
+        ]
+      },
+      {
+        "Pants": [
+          {
+            "productId": "4",
+            "imageUrl": "https://www.drivegoo",
+            "productName": "Slim Fit Chinos",
+            "size": ["30", "32", "34", "36"],
+            "color": ["Khaki", "Navy"],
+            "brand": "Dockers",
+            "style": ["Chinos", "zip fly"],
+            "material": ["98% cotton", "2% elastane"],
+            "fitNote": "Model is 6'0\" / 183 cm wearing size 32",
+            "rentPrice": 600000,
+            "retailPrice": 1800000
+          }
+        ]
+      }
     ]
   }
 }

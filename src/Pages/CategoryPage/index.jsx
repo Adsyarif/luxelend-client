@@ -4,6 +4,7 @@ import { useState } from "react";
 import data from "../../data/categoryData.json";
 
 const CategoryPage = () => {
+  console.log(data);
   // const [Categories, setCategories] = useState({
   //   women: [],
   //   men: [],
