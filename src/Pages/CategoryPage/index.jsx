@@ -14,36 +14,12 @@ const CategoryPage = () => {
   //   const data = await response.json();
   // };
 
-  const gender = {
-    women: [
-      "View All Styles",
-      "Pants",
-      "Dresses",
-      "Skirts",
-      "Tops",
-      "Sweaters + Swetshirt",
-      "Jackets + Coats",
-      "Jumpsuits + Rompers",
-    ],
-    men: [
-      "View All Styles",
-      "Jackets + Coats",
-      "Tops",
-      "Sweaters + Swetshirt",
-      "Pants",
-    ],
-  };
-
   return (
     <div className="md:mx-auto md:max-w-md">
       <Header />
       <BackButton />
-      <CategoryCard
-        items={data.category.women}
-        gender={"Women"}
-        isWomen={true}
-      />
-      <CategoryCard items={data.category.men} gender={"Men"} isWomen={false} />
+      <CategoryCard items={data.category.women} gender={"Women"} />
+      <CategoryCard items={data.category.men} gender={"Men"} />
     </div>
   );
 };
