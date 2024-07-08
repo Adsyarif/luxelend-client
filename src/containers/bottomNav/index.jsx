@@ -1,4 +1,4 @@
-import { Button } from "../../components/button";
+import { Button } from "../../components/buttonRent";
 import { Card } from "../../components/cards";
 import homeImg from "../../Assets/img/Home.png";
 import listImg from "../..//Assets/img/List.png";

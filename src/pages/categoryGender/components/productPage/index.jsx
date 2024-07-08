@@ -1,6 +1,6 @@
 import { ProductCard } from "../productCard";
 
-export function ProductWrapper() {
+export function ProductPage() {
   return (
     <>
       <div className="p-4 border-none grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">

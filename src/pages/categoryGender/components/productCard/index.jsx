@@ -1,6 +1,6 @@
 import { Card } from "../../../../components/cards";
 import productImg from "../../../../Assets/img/product.webp";
-import { Button } from "../../../../components/button";
+import { Button } from "../../../../components/buttonRent";
 
 export function ProductCard() {
   return (
