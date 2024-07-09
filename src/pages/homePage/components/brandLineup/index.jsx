@@ -1,5 +1,5 @@
-import { Card } from "../../common/cards";
-import kateSpade from "../../../../../assets/img/kate-spade.webp";
+import { Card } from "../../../../components/cards";
+import kateSpade from "../../../../assets/img/kate-spade.webp";
 
 export function BrandLineup() {
     return (

@@ -1,5 +1,5 @@
-import { Card } from "../../common/cards";
-import Scroll from "../../../../../assets/img/scroll.webp";
+import { Card } from "../../../../components/cards";
+import Scroll from "../../../../assets/img/scroll.webp";
 
 export function FeaturesCard() {
     return (

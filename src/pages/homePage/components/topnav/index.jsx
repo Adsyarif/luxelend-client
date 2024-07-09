@@ -1,4 +1,4 @@
-import { Card } from "../../common/cards";
+import { Card } from "../../../../components/cards";
 
 export function TopNav() {
     return (
