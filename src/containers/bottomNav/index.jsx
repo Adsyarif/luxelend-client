@@ -1,7 +1,7 @@
 import { Button } from "../../components/buttonRent";
 import { Card } from "../../components/cards";
-import homeImg from "../../Assets/img/Home.png";
-import listImg from "../..//Assets/img/List.png";
+import homeImg from "../../assets/img/Home.png";
+import listImg from "../../assets/img/List.png";
 
 export function BottomNav() {
   return (
