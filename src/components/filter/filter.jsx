@@ -25,6 +25,8 @@ const Filter = ({ setFilters, category }) => {
     const [brandFilter, setBrandFilter] = useState('');
     const [styleFilter, setStyleFilter] = useState('');
     const [availableNow, setAvailableNow] = useState(false);
+    const [sortOrder, setSortOrder] = useState('newest');
+    const [activeSortOrder, setActiveSortOrder] = useState('newest');
 
     const openModal = () => setModalIsOpen(true);
     const closeModal = () => setModalIsOpen(false);
@@ -37,6 +39,8 @@ const Filter = ({ setFilters, category }) => {
         setStyleFilter('');
         setAvailableNow(false);
         applyFilters();
+        setSortOrder('');
+        setActiveSortOrder('');   
     };
 
     const handleApplyFilters = () => {
@@ -45,14 +49,17 @@ const Filter = ({ setFilters, category }) => {
     };
 
     const applyFilters = () => {
-        setFilters({
+        setFilters((prev) => ({
+            ...prev,
             sizeFilter,
             colorFilter,
             materialFilter,
             brandFilter,
             styleFilter,
             availableNow,
-        });
+            sortOrder,
+            activeSortOrder,
+        }))
     };
 
     const filters = {
@@ -121,11 +128,11 @@ const Filter = ({ setFilters, category }) => {
 
     return (
         <>
-            <div className="p-5 flex justify-between w-full">
+            <div className="p-5 ">
                 <button className="rounded-md px-3 py-1 border border-slate-100 bg-[#F9E29A]" onClick={openModal}>
                     Filter + Sort
                 </button>
-                <p>{`${[sizeFilter, colorFilter, materialFilter, brandFilter, styleFilter].filter(Boolean).length} result`}</p>
+                
             </div>
 
             <Modal
@@ -154,10 +161,26 @@ const Filter = ({ setFilters, category }) => {
                     <h2 className="mb-4 text-xl font-bold text-center">Filter + Sort</h2>
                     <h3 className="font-bold">Sort by</h3>
                     <div className="flex font-semibold text-xs">
-                        <button className="rounded-md px-3 py-1 border border-slate-100 bg-[#F9E29A]">Newest</button>
-                        <button className="rounded-md px-3 py-1 border border-slate-100 bg-[#F9E29A]">Popular</button>
-                        <button className="rounded-md px-3 py-1 border border-slate-100 bg-[#F9E29A]">High to low</button>
-                        <button className="rounded-md px-3 py-1 border border-slate-100 bg-[#F9E29A]">Low to high</button>
+                    <button 
+                            className={`rounded-md px-3 py-1 border border-slate-100 ${activeSortOrder === 'newest' ? 'bg-[#EFB01F] text-white' : 'bg-[#F9E29A]'}`}
+                            onClick={() => { setSortOrder('newest'); setActiveSortOrder('newest'); }}>
+                            Newest
+                        </button>
+                        <button 
+                            className={`rounded-md px-3 py-1 border border-slate-100 ${activeSortOrder === 'popular' ? 'bg-[#EFB01F] text-white' : 'bg-[#F9E29A]'}`}
+                            onClick={() => { setSortOrder('popular'); setActiveSortOrder('popular'); }}>
+                            Popular
+                        </button>
+                        <button 
+                            className={`rounded-md px-3 py-1 border border-slate-100 ${activeSortOrder === 'highToLow' ? 'bg-[#EFB01F] text-white' : 'bg-[#F9E29A]'}`}
+                            onClick={() => { setSortOrder('highToLow'); setActiveSortOrder('highToLow'); }}>
+                            High to low
+                        </button>
+                        <button 
+                            className={`rounded-md px-3 py-1 border border-slate-100 ${activeSortOrder === 'lowToHigh' ? 'bg-[#EFB01F] text-white' : 'bg-[#F9E29A]'}`}
+                            onClick={() => { setSortOrder('lowToHigh'); setActiveSortOrder('lowToHigh'); }}>
+                            Low to high
+                        </button>
                     </div>
 
                     <div className="mt-5 mb-3 flex justify-between items-center">
@@ -255,7 +278,7 @@ const Filter = ({ setFilters, category }) => {
                         </select>
                     </div>
 
-                    <div className="flex w-full justify-between mt-8 font-bold ">
+                    <div className="flex mt-8 font-bold ">
                         <button
                             className="m-5 w-1/2 rounded-lg bg-gradient-to-r from-[#D2B48C] to-[#EFB01F] text-white px-4 py-2"
                             onClick={handleClearFilters}
